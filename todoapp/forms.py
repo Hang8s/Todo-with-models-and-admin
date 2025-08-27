@@ -13,3 +13,9 @@ class AddForm (ModelForm):
     class Meta:
         model = Task
         fields = ['title','description','due_date','priority']
+        
+        widgets = {
+            'title': forms.TextInput(attrs={'class': 'input-field', 'placeholder': 'Enter title'}),
+            'description': forms.Textarea(attrs={'class': 'input-field', 'placeholder': 'Enter description', 'rows': 3}),
+            'is_completed': forms.CheckboxInput(attrs={'class': 'checkbox'}),
+        }

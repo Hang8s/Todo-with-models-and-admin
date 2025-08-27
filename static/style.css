@@ -74,3 +74,66 @@ input:focus {
     font-size: 12px;
     margin-top: 3px;
 }
+
+/* todo page styling */
+.todo-container {
+    width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo-card {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.todo-card h2 {
+    font-size: 18px;
+    color: #333;
+}
+
+.todo-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+
+textarea.input-field {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.checkbox {
+    width: 18px;
+    height: 18px;
+    margin-top: 8px;
+}
+.todo-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #e74c3c;
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
